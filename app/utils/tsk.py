@@ -9,3 +9,8 @@ celery = Celery(__name__, broker=CELERY_BROKER_URL, backend=CELERY_RESULT_BACKEN
 @celery.task()
 def test():
     print("okokokokok")
+
+
+@celery.task(name="import_data")
+def import_data():
+    print('dsadasd')

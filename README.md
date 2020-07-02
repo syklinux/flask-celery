@@ -17,5 +17,5 @@
 - ticket/celerywork.py 为 celery启动文件，分开不会有循环调用的风险
 - celery启动：
 ```shell
-  venv/bin/celery -A celerywork.celery worker -l INFO
+  venv/bin/celery -A celerywork.celery worker -l INFO --beat
 ```
